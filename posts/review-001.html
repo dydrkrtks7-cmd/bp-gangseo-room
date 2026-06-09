@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>뻔한 &#39;추천&#39;은 고사하고, 47분짜리 클라우드 지연이 날려버린 내 지갑 이야기</title>
+  <link rel="canonical" href="https://gangseo-room.pages.dev/posts/review-001.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>뻔한 &#39;추천&#39;은 고사하고, 47분짜리 클라우드 지연이 날려버린 내 지갑 이야기</h1>
+    <article>
+      <p><img src="../assets/interior__hero__t3b04-bh-kb-real-1__1344x768__cd66458dc0486ab8.png" alt="데이터 센터 서버 랙과 좌절한 표정으로 재무 보고서를 보는 비즈니스맨, 배경에는 지연 시간을 나타내는 그래프와 달러 기호가 겹쳐져 있다." loading="lazy" width="1344" height="768"></p>
+<p>솔직히 요즘 '가성비'니 '최적화'니 하는 뻔한 추천 글들은 읽을 가치도 없습니다. 말이야 쉽지, 실제 시스템에 적용하면 예상치 못한 변수가 터져 나오기 일쑤죠. 특히 클라우드 인프라에서는 그런 '추천'이 불러올 보이지 않는 비용까지는 그 누구도 책임져주지 않습니다. 마치 섣부른 '마포 셔츠룸 추천'처럼, 겉보기엔 그럴듯해도 막상 뚜껑을 열면 예상치 못한 지연이나 추가 비용이 터져 나오는 법입니다.</p>
+<p>저희 재무팀은 늘 비용 최적화에 목을 맵니다. 작년 말, 특정 리전의 컴퓨팅 리소스 사용량이 급증하면서 Reserved Instance(RI) 구매를 적극 검토하고 있었습니다. 당시 내부적으로는 Cloudflare의 Cache Reserve를 도입해 오리진 트래픽을 줄이고, 그 절감분을 바탕으로 보다 정확한 RI 구매 계획을 세우려 했죠.</p>
+<p>하지만 문제는 의외의 곳에서 터졌습니다. Cloudflare Cache Reserve는 L2 캐시 미스 시 오리진 대신 R2 같은 영구 스토리지에서 데이터를 가져와 대역폭 비용을 줄여주는 좋은 기능입니다. 그러나 특정 엣지 로케이션, 특히 2023년 Q3 기준으로 아시아 태평양 일부 PoP(Points of Presence)에서 캐시 무효화(Cache Invalidation) 지연이 심각하게 발생한다는 보고가 올라왔습니다. 최대 47분에 달하는 지연이었죠.</p>
+<p>이게 무슨 의미냐고요? 저희는 실시간에 가까운 데이터 업데이트가 필요한 서비스도 운영하는데, 캐시 무효화가 47분까지 지연된다는 건 결국 사용자에게 오래된 정보를 보여주거나, 혹은 캐시를 우회하고 오리진 서버로 직접 요청을 날리게 만든다는 겁니다. 결과적으로 저희는 Cache Reserve의 이점을 제대로 누리지 못했고, 오히려 예상보다 높은 오리진 트래픽과 컴퓨팅 부하를 계속 감당해야 했습니다.</p>
+<p>이 불확실성 때문에 RI 구매 결정이 계속 미뤄졌습니다. "Cache Reserve가 안정화되면 트래픽 패턴이 더 명확해질 테니 그때 구매하자"는 의견이 지배적이었죠. 하지만 그 사이, 하필이면 특정 인스턴스 패밀리(예: `m6i.large` 계열)에 대한 RI 가격 인하 공지가 나왔습니다. 그리고 저희는 그 결정적인 타이밍을 놓쳤습니다.</p>
+<p>결국, 47분이라는 사소해 보이는 캐시 지연 하나 때문에, 저희는 수천만 원에 달하는 잠재적 비용 절감 기회를 허공에 날려버린 셈입니다. 클라우드 인프라의 미묘한 엣지케이스 하나가 재무 계획 전체를 뒤흔들 수 있다는 걸 뼈저리게 깨달았죠. 서버리스 환경에서 Lambda 콜드스타트 핀포인트 최적화를 위해 캐시 일관성이 얼마나 중요한지 아는 사람이라면, 이 '보이지 않는 비용'이 얼마나 큰지 짐작할 겁니다. 대충 '추천'만 믿고 도입했다가 피 본 거죠.</p>
+
+    <div class="juice-ref-w9h1zn" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>심층 정보와 실제 데이터는 <a href="https://mens-esthe.space">shinjuku-mens</a>를 참고하세요.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://support.google.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+    </article>
+  </main>
+</body>
+</html>
