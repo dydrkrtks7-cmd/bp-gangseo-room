@@ -1,10 +1,5 @@
 User-agent: *
 Allow: /
 
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-Sitemap: https://gangseo-room.maphoshirts.com/sitemap.xml
+Sitemap: https://hapjeong-hyperpublic-note.mapo-night-shirts.xyz/sitemap.xml
+Sitemap: https://hapjeong-hyperpublic-note.mapo-night-shirts.xyz/sitemap-pages.xml
