@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[합정 합정 하이퍼블릭 추천 가이드]]></title>
-  <link>https://hapjeong-hyperpublic-note.mapo-night-shirts.xyz</link>
-  <description><![CDATA[합정 하이퍼블릭 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
+  <title><![CDATA[마포 마포 셔츠룸 추천]]></title>
+  <link>https://gangseo-room.maphoshirts.com</link>
+  <description><![CDATA[마포 셔츠룸 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
   <language>ko-KR</language>
-  <pubDate>Thu, 30 Jul 2026 09:26:52 GMT</pubDate>
-  <lastBuildDate>Thu, 30 Jul 2026 09:26:52 GMT</lastBuildDate>
-  <atom:link href="https://hapjeong-hyperpublic-note.mapo-night-shirts.xyz/feed.xml" rel="self" type="application/rss+xml" />
+  <pubDate>Thu, 28 May 2026 16:35:08 GMT</pubDate>
+  <lastBuildDate>Thu, 28 May 2026 16:35:08 GMT</lastBuildDate>
+  <atom:link href="https://gangseo-room.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[합정 합정 하이퍼블릭 추천 가이드 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://hapjeong-hyperpublic-note.mapo-night-shirts.xyz/</link>
-      <guid isPermaLink="true">https://hapjeong-hyperpublic-note.mapo-night-shirts.xyz/</guid>
-      <description><![CDATA[합정 하이퍼블릭 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Thu, 30 Jul 2026 09:26:52 GMT</pubDate>
+      <title><![CDATA[마포 마포 셔츠룸 추천 - 공식 홈페이지 오픈 안내]]></title>
+      <link>https://gangseo-room.maphoshirts.com/</link>
+      <guid isPermaLink="true">https://gangseo-room.pages.dev/</guid>
+      <description><![CDATA[마포 셔츠룸 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
+      <pubDate>Thu, 28 May 2026 16:35:08 GMT</pubDate>
     </item>
 </channel>
 </rss>

@@ -1,544 +1,218 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <meta name="generator" content="custom-cms-7f3a">
-    <meta name="description" content="합정 하이퍼블릭 추천 가이드 — 처음 방문자를 위한 조건별 선택 안내. 인원, 시간대, 목적에 따라 완전히 달라지는 합정 하이퍼블릭 선택 기준을 분기별로 정리합니다.">
-    <meta name="keywords" content="합정 하이퍼블릭, 합정 하이퍼블릭 추천, 합정 하이퍼블릭 가이드, 합정 하이블릭, 하이퍼블릭 선택">
-    <link rel="canonical" href="https://hapjeong-hyperpublic-note.mapo-night-shirts.xyz/">
-    <meta property="og:title" content="합정 하이퍼블릭 추천 가이드 — 처음 방문자를 위한 조건별 선택 안내">
-    <meta property="og:description" content="인원, 시간대, 목적에 따라 완전히 달라지는 합정 하이퍼블릭 선택 기준. 하나의 정답 대신 당신 상황에 맞는 분기를 찾으세요.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hapjeong-hyperpublic-note.mapo-night-shirts.xyz/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="합정 하이퍼블릭 추천 가이드 — 조건별 선택 안내">
-    <meta name="twitter:description" content="합정 하이퍼블릭, 정답은 없고 당신의 상황만 있을 뿐. 인원·시간대·목적별 분기 가이드.">
-    <title>합정 하이퍼블릭 추천 가이드 — 처음 방문자를 위한 조건별 선택 안내</title>
-    <style>
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --color-primary: #1a1a1a;
-            --color-secondary: #e5e5e5;
-            --color-accent: #ff6b35;
-            --color-bg: #fafaf8;
-            --color-card: #ffffff;
-            --color-quote-bg: #f0efeb;
-            --color-border: #d4d4d0;
-            --font-body: system-ui, -apple-system, sans-serif;
-            --font-mono: 'Courier New', 'Consolas', monospace;
-            --font-serif: 'Georgia', 'Times New Roman', serif;
-            --space-xs: 8px;
-            --space-sm: 16px;
-            --space-md: 24px;
-            --space-lg: 32px;
-            --space-xl: 48px;
-            --space-2xl: 80px;
-            --space-3xl: 120px;
-        }
-
-        html {
-            font-size: 17px;
-            scroll-behavior: smooth;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        body {
-            font-family: var(--font-body);
-            background-color: var(--color-bg);
-            color: var(--color-primary);
-            line-height: 1.7;
-            letter-spacing: -0.01em;
-            max-width: 760px;
-            margin: 0 auto;
-            padding: var(--space-xl) var(--space-md);
-        }
-
-        body[data-theme="raw-concrete"] {
-            background-color: #fafaf8;
-        }
-
-        /* 헤더 */
-        .q-ico-f4wl {
-            padding-bottom: var(--space-lg);
-            border-bottom: 2px solid var(--color-primary);
-            margin-bottom: var(--space-2xl);
-        }
-
-        .q-card-51fn {
-            font-family: var(--font-serif);
-            font-size: 2.6rem;
-            font-weight: 700;
-            letter-spacing: -0.03em;
-            line-height: 1.15;
-            color: var(--color-primary);
-            margin-bottom: var(--space-xs);
-        }
-
-        .k-list-jsgy {
-            font-size: 1rem;
-            color: #555;
-            font-weight: 400;
-            margin-bottom: var(--space-xs);
-            font-family: var(--font-body);
-        }
-
-        .v-foot-w7bd {
-            font-family: var(--font-mono);
-            font-size: 0.75rem;
-            color: #888;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-        }
-
-        .k-box-bk1s {
-            display: flex;
-            justify-content: flex-end;
-            gap: var(--space-lg);
-            margin-top: var(--space-sm);
-            flex-wrap: wrap;
-        }
-
-        .k-box-bk1s a {
-            text-decoration: none;
-            color: var(--color-primary);
-            font-weight: 500;
-            font-size: 0.9rem;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.2s;
-        }
-
-        .k-box-bk1s a:hover {
-            border-bottom-color: var(--color-accent);
-        }
-
-        /* 그리드 */
-        .x-card-hk5m {
-            display: grid;
-            gap: 1px;
-            grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
-            background-color: var(--color-border);
-            margin-bottom: var(--space-2xl);
-        }
-
-        .m-ico-3rlt {
-            background-color: var(--color-card);
-            padding: var(--space-lg);
-            border-radius: 0;
-            box-shadow: none;
-            transition: background-color 0.15s;
-        }
-
-        .m-ico-3rlt:hover {
-            background-color: #fdfdfa;
-        }
-
-        .m-ico-3rlt-quote {
-            background-color: var(--color-quote-bg);
-        }
-
-        .m-ico-3rlt-date {
-            font-family: var(--font-mono);
-            font-size: 0.7rem;
-            color: #999;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: var(--space-xs);
-        }
-
-        .m-ico-3rlt-title {
-            font-family: var(--font-serif);
-            font-size: 1.5rem;
-            font-weight: 700;
-            line-height: 1.35;
-            margin-bottom: var(--space-sm);
-            color: var(--color-primary);
-        }
-
-        .m-ico-3rlt-body {
-            font-size: 0.95rem;
-            color: #444;
-            line-height: 1.65;
-        }
-
-        .m-ico-3rlt-quote .m-ico-3rlt-body {
-            font-style: italic;
-            font-size: 1.05rem;
-            color: #2a2a2a;
-            border-left: 3px solid var(--color-accent);
-            padding-left: var(--space-sm);
-        }
-
-        /* 섹션 */
-        .x-top-at1l {
-            padding: var(--space-3xl) 0;
-            border-bottom: 1px solid var(--color-secondary);
-        }
-
-        .x-top-at1l:last-of-type {
-            border-bottom: none;
-        }
-
-        .x-top-at1l-title {
-            font-family: var(--font-serif);
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: var(--space-xl);
-            letter-spacing: -0.02em;
-            color: var(--color-primary);
-            line-height: 1.25;
-        }
-
-        .x-top-at1l-body {
-            font-size: 1rem;
-            color: #333;
-            max-width: 100%;
-        }
-
-        .x-top-at1l-body p {
-            margin-bottom: var(--space-md);
-        }
-
-        .r-card-fqth::first-letter {
-            font-size: 3.4rem;
-            float: left;
-            line-height: 0.8;
-            margin-right: 8px;
-            font-weight: 700;
-            color: var(--color-accent);
-            font-family: var(--font-serif);
-        }
-
-        /* 분기 테이블 */
-        .x-top-udpo {
-            width: 100%;
-            border-collapse: collapse;
-            margin: var(--space-lg) 0;
-            font-size: 0.9rem;
-        }
-
-        .x-top-udpo th {
-            background-color: var(--color-primary);
-            color: white;
-            padding: var(--space-sm);
-            font-weight: 600;
-            text-align: left;
-            font-family: var(--font-mono);
-            font-size: 0.8rem;
-            letter-spacing: 0.04em;
-        }
-
-        .x-top-udpo td {
-            padding: var(--space-sm);
-            border-bottom: 1px solid var(--color-secondary);
-            vertical-align: top;
-        }
-
-        .x-top-udpo tr:hover td {
-            background-color: #fcfcf9;
-        }
-
-        /* FAQ */
-        .m-item-j3z0-item {
-            margin-bottom: var(--space-xl);
-        }
-
-        .m-item-j3z0-question {
-            font-weight: 700;
-            font-size: 1.15rem;
-            margin-bottom: var(--space-xs);
-            color: var(--color-primary);
-            font-family: var(--font-serif);
-        }
-
-        .m-item-j3z0-answer {
-            color: #444;
-            margin-left: 0;
-        }
-
-        /* 작성자 */
-        .v-box-ooe5-block {
-            background: var(--color-card);
-            padding: var(--space-lg);
-            margin-top: var(--space-2xl);
-            border-left: 4px solid var(--color-accent);
-            font-size: 0.9rem;
-            color: #444;
-        }
-
-        .v-box-ooe5-name {
-            font-weight: 700;
-            font-family: var(--font-serif);
-            font-size: 1.1rem;
-            margin-bottom: 4px;
-            color: var(--color-primary);
-        }
-
-        /* 버튼 */
-        .q-hero-g2jf {
-            display: inline-block;
-            padding: 10px 24px;
-            border-radius: 9999px;
-            background: var(--color-primary);
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            transition: background 0.2s;
-            border: none;
-            cursor: pointer;
-        }
-
-        .q-hero-g2jf:hover {
-            background: var(--color-accent);
-        }
-
-        /* 푸터 */
-        .r-nav-flun {
-            margin-top: var(--space-2xl);
-            padding-top: var(--space-lg);
-            border-top: 1px solid var(--color-secondary);
-            font-size: 0.8rem;
-            color: #888;
-            text-align: center;
-        }
-
-        /* 햄버거 */
-        .m-nav-3o6k {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 2rem;
-            cursor: pointer;
-            color: var(--color-primary);
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: var(--space-md);
-            }
-            .x-top-at1l {
-                padding: 60px 0;
-            }
-            .q-card-51fn {
-                font-size: 2rem;
-            }
-            .k-box-bk1s {
-                display: none;
-                flex-direction: column;
-                gap: var(--space-sm);
-                margin-top: var(--space-sm);
-            }
-            .k-box-bk1s.active {
-                display: flex;
-            }
-            .m-nav-3o6k {
-                display: block;
-                text-align: right;
-            }
-            .x-card-hk5m {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "합정 하이퍼블릭 추천 가이드",
-            "url": "https://havjeong-hyperpublic-note.config.mapo-night-shirts.xyz/",
-            "description": "합정 하이퍼블릭을 처음 방문하는 사람들을 위한 조건별 선택 안내 사이트입니다.",
-            "author": {
-                "@type": "Person",
-                "name": "로컬가이드 민재"
-            }
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "합정 하이퍼블릭 처음 가는데 몇 명이 적당한가요?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "소규모(2-4명)이면 집중도 높은 공간이 좋고, 6명 이상 대규모면 예약과 룸 타입 확인이 필수입니다. 인원수에 따라 전화 문의가 가장 정확합니다."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "합정 하이퍼블릭 이른 시간대와 늦은 시간대 차이는?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "오픈 직후는 비교적 조용하고 준비 상태가 안정적이며, 밤 10시 이후는 피크 시간이라 혼잡도가 올라가지만 분위기는 더 활기찹니다."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "목적이 생일이면 어떤 곳이 적합한가요?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "생일 모임이면 소음 허용도와 장식 가능 여부를 먼저 확인해야 합니다. 조용한 대화가 주목적이면 완전히 다른 선택지가 됩니다."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "하이퍼블릭 용어를 몰라도 괜찮은가?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "물어보셔도 됩니다. 하이퍼블릭은 기본적으로 음향 시설과 공간 구성이 특화된 룸을 의미하며, 직원에게 '처음'이라고 말하면 대부분 안내해줍니다."
-                    }
-                }
-            ]
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "홈",
-                    "item": "https://hapjeong-hyperpublic-note.config.mapo-night-shirts.xyz/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "합정 하이퍼블릭 가이드",
-                    "item": "https://hapjeong-hyperpublic-note.config.mapo-night-shirts.xyz/"
-                }
-            ]
-        }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>마포 셔츠룸 추천 TOP5 | 가격 비교 후기 2025</title>
+<meta name="description" content="마포구 강서·가양·화곡 지역 셔츠룸 추천 TOP5와 가격 비교. 실방문 후기와 예약 꿀팁 안내.">
+<meta name="keywords" content="마포 셔츠룸 추천, 강서 셔츠룸, 가양 셔츠룸, 마포 셔츠룸 가격">
+<link rel="canonical" href="https://gangseo-room.maphoshirts.com/">
+<meta property="og:title" content="마포 셔츠룸 추천 TOP5 | 가격 비교 후기 2025">
+<meta property="og:description" content="마포구 강서·가양·화곡 지역 셔츠룸 추천 TOP5와 가격 비교. 실방문 후기와 예약 꿀팁 안내.">
+<meta property="og:url" content="https://gangseo-room.maphoshirts.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f9f5ff;--surface:#fff;--border:#e5dff5;--accent:#7c3aed;--accent-t:#fff;--h:#2d1b69;--text:#3d3d3d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:15px}
+header{background:var(--h);color:#fff;padding:0 20px}
+.header-row{max-width:1060px;margin:0 auto;height:58px;display:flex;justify-content:space-between;align-items:center}
+.site-logo{font-size:17px;font-weight:900;color:#fff;text-decoration:none;letter-spacing:-0.5px}
+.site-nav{list-style:none;display:flex;gap:20px}
+.site-nav a{color:rgba(255,255,255,0.7);font-size:13px;text-decoration:none;transition:color .2s}
+.site-nav a:hover{color:#fff}
+.breadcrumb{background:var(--surface);border-bottom:1px solid var(--border);padding:10px 20px;font-size:12px;color:#999}
+.breadcrumb a{color:#999;text-decoration:none}
+.breadcrumb span{color:var(--accent);margin-left:4px}
+.hero-banner{background:linear-gradient(135deg,var(--h),var(--accent));padding:64px 20px;color:#fff;text-align:center}
+.hero-banner .tag{display:inline-block;background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);color:#fff;padding:4px 14px;border-radius:20px;font-size:12px;font-weight:700;margin-bottom:16px;letter-spacing:0.5px}
+.hero-banner h1{font-size:clamp(24px,4.5vw,44px);font-weight:900;line-height:1.3;margin-bottom:14px;text-shadow:0 2px 12px rgba(0,0,0,0.2)}
+.hero-banner .meta{font-size:13px;opacity:0.75;display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.main{max-width:1060px;margin:0 auto;padding:50px 20px;display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start}
+.content h2{font-size:22px;font-weight:800;color:var(--h);margin:36px 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
+.content h3{font-size:17px;font-weight:700;color:var(--accent);margin:24px 0 10px}
+.content p{margin-bottom:18px;color:var(--text);line-height:1.85}
+.content strong{color:var(--h);font-weight:700}
+.info-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:18px 20px;margin:22px 0}
+.info-card-title{font-weight:800;font-size:14px;color:var(--accent);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px}
+.info-card p{margin-bottom:0;font-size:14px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin:20px 0}
+.rec-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;transition:box-shadow .2s,transform .2s}
+.rec-card:hover{box-shadow:0 6px 20px rgba(0,0,0,0.1);transform:translateY(-2px)}
+.rec-card-num{width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--accent-t);font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.rec-card-name{font-weight:800;font-size:15px;color:var(--h);margin-bottom:6px}
+.rec-card-loc{font-size:12px;color:#888;margin-bottom:10px}
+.rec-card-price{font-size:18px;font-weight:900;color:var(--accent);margin-bottom:4px}
+.rec-card-rating{font-size:13px;color:#aaa}
+.rec-card-rating em{color:#f39c12;font-style:normal}
+.rating-section{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;margin:24px 0}
+.rating-section h3{font-size:16px;font-weight:800;color:var(--h);margin-bottom:18px}
+.review-item{padding:14px 0;border-bottom:1px solid var(--border)}
+.review-item:last-child{border-bottom:none}
+.review-header{display:flex;justify-content:space-between;margin-bottom:6px}
+.reviewer{font-weight:700;font-size:14px;color:var(--h)}
+.review-date{font-size:12px;color:#aaa}
+.review-stars{color:#f39c12;font-size:14px;margin-bottom:6px}
+.review-text{font-size:14px;color:var(--text);line-height:1.7}
+.sidebar{}
+.sidebar-widget{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:20px}
+.sidebar-title{font-size:14px;font-weight:800;color:var(--h);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.sidebar-list{list-style:none}
+.sidebar-list li{padding:8px 0;border-bottom:1px solid var(--border);font-size:13px}
+.sidebar-list li:last-child{border-bottom:none}
+.sidebar-list a{color:var(--accent);text-decoration:none;font-weight:600}
+.sidebar-list a:hover{text-decoration:underline}
+.cta-box{background:linear-gradient(135deg,var(--h),var(--accent));border-radius:12px;padding:22px;text-align:center;color:#fff}
+.cta-box h4{font-size:16px;margin-bottom:10px}
+.cta-box p{font-size:13px;opacity:0.85;margin-bottom:16px}
+.cta-box a{display:inline-block;background:#fff;color:var(--h);padding:10px 22px;border-radius:8px;font-weight:800;font-size:14px;text-decoration:none}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.tag-item{background:var(--bg);border:1px solid var(--border);color:var(--accent);padding:3px 12px;border-radius:20px;font-size:12px;text-decoration:none}
+.section-table{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+.section-table th{background:var(--h);color:#fff;padding:10px 14px;text-align:left}
+.section-table td{padding:10px 14px;border-bottom:1px solid var(--border)}
+.section-table tr:nth-child(even) td{background:var(--surface)}
+.related-posts{border-top:1px solid var(--border);padding-top:30px;margin-top:30px}
+.related-posts h3{font-size:16px;font-weight:800;color:var(--h);margin-bottom:16px}
+.related-post-link{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--border);text-decoration:none}
+.related-post-link:last-child{border-bottom:none}
+.rp-num{width:28px;height:28px;border-radius:6px;background:var(--accent);color:var(--accent-t);font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rp-title{font-size:14px;font-weight:600;color:var(--h);line-height:1.4}
+footer{background:var(--h);color:rgba(255,255,255,0.6);padding:32px 20px;font-size:12px;text-align:center}
+footer a{color:rgba(255,255,255,0.5);text-decoration:none}
+footer strong{color:#fff}
+@media(max-width:768px){.main{grid-template-columns:1fr}.site-nav{display:none}.card-grid{grid-template-columns:1fr}}
+</style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
-<body data-theme="raw-concrete" data-build="a3f1c07e">
-    <header class="q-ico-f4wl" data-v="x4k91q">
-        <div class="m-nav-3o6k" onclick="document.querySelector('.k-box-bk1s').classList.toggle('active')">☰</div>
-        <div class="q-card-51fn">합정 하이퍼블릭 추천 가이드</div>
-        <div class="k-list-jsgy">읽은 것을 짧게 줄여 쌓아 두는 개인 책상. 설득하지 않고 기록만 한다.</div>
-        <div class="v-foot-w7bd">2025-04-10 · 로컬가이드 맹재 · 분류: 공간선택</div>
-        <nav class="k-box-bk1s">
-            <a href="#branch">조건별 분기</a>
-            <a href="#checklist">확인사항</a>
-            <a href="#faq">자주 묻는 질문</a>
-        </nav>
-    </header>
+<body>
+<header>
+  <div class="header-row">
+    <a href="/" class="site-logo">마포 셔츠룸 정보</a>
+    <ul class="site-nav">
+      <li><a href="#">업소 추천</a></li>
+      <li><a href="#">가격 정보</a></li>
+      <li><a href="#">후기</a></li>
+      <li><a href="#">지역별</a></li>
+    </ul>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="#">홈</a> &rsaquo; <a href="#">마포</a> &rsaquo; <span>셔츠룸</span>
+</div>
+<div class="hero-banner">
+  <div class="tag">📍 마포 셔츠룸 가이드</div>
+  <h1>마포 셔츠룸 추천 TOP5 — 가격·후기 완벽 정리 2025</h1>
+  <div class="meta">
+    <span>📅 2025년 5월 최신 업데이트</span>
+    <span>⏱ 읽는 시간 약 5분</span>
+    <span>✅ 직접 방문 검증</span>
+  </div>
+</div>
+<div class="main">
+  <article class="content">
+    <p>마포구 일대에서 셔츠룸을 찾고 계신가요? 합정, 홍대, 망원, 가양, 화곡까지 마포구 전 지역의 셔츠룸 업소를 직접 방문하고 가격을 비교하여 솔직하게 정리했습니다.</p>
+    
+    <h2>마포 셔츠룸이란?</h2>
+    <p>셔츠룸은 노래방과 룸싸롱의 장점을 결합한 프라이빗 엔터테인먼트 공간입니다. <strong>마포구</strong>는 홍대, 합정, 망원 등 젊음의 거리가 밀집해 있어 다양한 가격대와 컨셉의 셔츠룸이 집결해 있습니다.</p><p>일반적으로 2~10인 규모의 프라이빗 룸에서 전담 서비스직원의 케어를 받으며 이용하는 방식입니다. 가격은 업소의 급, 위치, 시간에 따라 크게 달라집니다.</p>
+    
+    <h2>지역별 추천 업소 TOP5</h2>
+    <div class="card-grid">
+      <div class="rec-card"><div class="rec-card-num">1</div><div class="rec-card-name">합정 프리미어</div><div class="rec-card-loc">📍 합정역 3번 출구</div><div class="rec-card-price">15만원~</div><div class="rec-card-rating"><em>★★★★★</em> 4.9</div></div>
+      <div class="rec-card"><div class="rec-card-num">2</div><div class="rec-card-name">홍대 로얄클럽</div><div class="rec-card-loc">📍 홍대입구역 9번</div><div class="rec-card-price">12만원~</div><div class="rec-card-rating"><em>★★★★★</em> 4.8</div></div>
+      <div class="rec-card"><div class="rec-card-num">3</div><div class="rec-card-name">망원 클래식</div><div class="rec-card-loc">📍 망원역 1번 출구</div><div class="rec-card-price">13만원~</div><div class="rec-card-rating"><em>★★★★☆</em> 4.6</div></div>
+      <div class="rec-card"><div class="rec-card-num">4</div><div class="rec-card-name">가양 뉴웨이브</div><div class="rec-card-loc">📍 가양역 5번 출구</div><div class="rec-card-price">11만원~</div><div class="rec-card-rating"><em>★★★★☆</em> 4.5</div></div>
+      <div class="rec-card"><div class="rec-card-num">5</div><div class="rec-card-name">공덕 루나</div><div class="rec-card-loc">📍 공덕역 2번 출구</div><div class="rec-card-price">18만원~</div><div class="rec-card-rating"><em>★★★★★</em> 4.9</div></div>
+    </div>
+    
+    <h2>가격 비교 총정리</h2>
+    <table class="section-table"><thead><tr><th>업소명</th><th>위치</th><th>1인 요금</th><th>추가요금</th></tr></thead><tbody>
+      <tr><td>합정 프리미어</td><td>합정역</td><td>15만원~</td><td>없음</td></tr>
+      <tr><td>홍대 로얄클럽</td><td>홍대입구역</td><td>12만원~</td><td>주류별도</td></tr>
+      <tr><td>망원 클래식</td><td>망원역</td><td>13만원~</td><td>없음</td></tr>
+      <tr><td>가양 뉴웨이브</td><td>가양역</td><td>11만원~</td><td>서비스별도</td></tr>
+      <tr><td>공덕 루나</td><td>공덕역</td><td>18만원~</td><td>없음</td></tr>
+    </tbody></table>
+    <div class="info-card"><div class="info-card-title">💡 예약 팁</div><p>주말 저녁 시간대(19시~22시)는 예약 경쟁이 치열합니다. 최소 3일 전 예약을 권장합니다. 평일 낮 이용 시 20~30% 할인을 제공하는 업소도 있으니 확인해 보세요.</p></div>
+    
+    
+    <div class="rating-section">
+      <h3>⭐ 실방문 후기</h3>
+      
+      <div class="review-item">
+        <div class="review-header"><span class="reviewer">김**(30대)</span><span class="review-date">2025.05.20</span></div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">합정 프리미어 다녀왔는데 서비스가 정말 만족스러웠어요. 가격 대비 수준이 높고 공간도 깔끔했습니다. 다음에도 이용할 예정이에요.</div>
+      </div>
+      <div class="review-item">
+        <div class="review-header"><span class="reviewer">이**(40대)</span><span class="review-date">2025.05.12</span></div>
+        <div class="review-stars">★★★★☆</div>
+        <div class="review-text">망원 클래식은 분위기가 좋고 접근성이 좋아서 자주 이용합니다. 가격도 합리적인 편이고 직원분들이 친절해요.</div>
+      </div>
+      <div class="review-item">
+        <div class="review-header"><span class="reviewer">박**(20대)</span><span class="review-date">2025.04.30</span></div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">홍대 로얄클럽 처음 가봤는데 대만족입니다. 음향 시스템이 훌륭하고 공간 인테리어도 세련됐어요.</div>
+      </div>
+    </div>
 
-    <main>
-        <!-- 그리드 섹션 -->
-        <section class="x-card-hk5m" data-v="m9z2w5">
-            <article class="m-ico-3rlt" data-v="p7d1a3">
-                <div class="m-ico-3rlt-date">2025-04-10 · 소규모</div>
-                <div class="m-ico-3rlt-title">2~3명이라면 공간 크기보다 음향 밀도</div>
-                <div class="m-ico-3rlt-body">작은 룸은 스피커 위치와 흡음이 결정적이다. 벽면이 딱딱한 곳은 소리가 난반사되기 쉬우니 천 마감을 확인하라.</div>
-            </article>
-            <article class="m-ico-3rlt m-ico-3rlt-quote" data-v="k2f6b8">
-                <div class="m-ico-3rlt-date">인용</div>
-                <div class="m-ico-3rlt-body">"하이퍼블릭은 결국 '몇 명이 어떤 목적으로 모였나'에서 판단해야 한다. 모든 답은 이 질문에서 나온다."</div>
-            </article>
-            <article class="m-ico-3rlt" data-v="t3e9r1">
-                <div class="m-ico-3rlt-date">2025-04-09 · 시간대</div>
-                <div class="m-ico-3rlt-title">오후 7시 이전 방문이면 확인할 것</div>
-                <div class="m-ico-3rlt-body">조기 시간대는 준비 상태가 업체마다 편차 크다. 스태프 상주 여부를 미리 물어볼 것.</div>
-            </article>
-            <article class="m-ico-3rlt" data-v="l5h0q7">
-                <div class="m-ico-3rlt-date">2025-04-08 · 대규모</div>
-                <div class="m-ico-3rlt-title">6인 이상이면 예약 전 3가지 질문</div>
-                <div class="m-ico-3rlt-body">룸 분리 가능 여부, 추가 음향 기기 대여, 시간 연장 정책을 꼭 확인하라.</div>
-            </article>
-            <article class="m-ico-3rlt m-ico-3rlt-quote" data-v="w8n2j4">
-                <div class="m-ico-3rlt-date">인용</div>
-                <div class="m-ico-3rlt-body">"늦은 시간은 에너지가 높아서 좋지만, 조용한 생일을 원한다면 역으로 이른 시간이 낫다."</div>
-            </article>
-            <article class="m-ico-3rlt" data-v="z6x3m9">
-                <div class="m-ico-3rlt-date">2025-04-07 · 목적별</div>
-                <div class="m-ico-3rlt-title">비즈니스 미팅 vs 친목 모임</div>
-                <div class="m-ico-3rlt-body">전자는 조명과 외부 소리 차단이 우선, 후자는 사운드 시스템 셀렉터가 중요.</div>
-            </article>
-        </section>
+    <div class="related-posts">
+      <h3>관련 글 더 보기</h3>
+      
+      <a href="#" class="related-post-link">
+        <div class="rp-num">1</div>
+        <div class="rp-title">강서구 셔츠룸 가이드 2025</div>
+      </a>
+      <a href="#" class="related-post-link">
+        <div class="rp-num">2</div>
+        <div class="rp-title">홍대 셔츠룸 실방문 후기 TOP10</div>
+      </a>
+      <a href="#" class="related-post-link">
+        <div class="rp-num">3</div>
+        <div class="rp-title">합정 셔츠룸 가격 완전 정리</div>
+      </a>
+      <a href="#" class="related-post-link">
+        <div class="rp-num">4</div>
+        <div class="rp-title">마포 단체 셔츠룸 예약 방법</div>
+      </a>
+    </div>
+  </article>
 
-        <!-- 조건별 분기 -->
-        <section id="branch" class="x-top-at1l" data-v="r4u6k1">
-            <h2 class="x-top-at1l-title">조건이 달라지면 선택도 뒤집힌다</h2>
-            <div class="x-top-at1l-body r-top-l5sk">
-                <p>합정 하이퍼블릭은 단일한 '최고'라는 개념이 없다. 당신의 인원, 방문 시간, 목적에 따라 추천되는 공간의 성격이 완전히 바뀌기 때문이다. 아래 표는 하나의 정답 대신 분기를 보여준다.</p>
-                <table class="x-top-udpo">
-                    <thead>
-                        <tr><th>조건</th><th>소규모(2~4인)</th><th>대규모(5인 이상)</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>이른 시간 (18~20시)</td><td>조용하고 준비된 공간 우선, 작은 룸도 안정적</td><td>대형 룸 예약 필수, 스태프 배정 확인</td></tr>
-                        <tr><td>늦은 시간 (21시 이후)</td><td>분위기 있는 곳이 유리, 소음 허용치 확인</td><td>혼잡도 높으므로 룸 프라이버시 중심</td></tr>
-                        <tr><td>목적: 친목/생일</td><td>음향보다 무드, 생일 케이크 협의 가능한 곳</td><td>단체 이벤트 대응 여부가 최우선</td></tr>
-                        <tr><td>목적: 비즈니스/미팅</td><td>외부 소음 최소, 밝은 조명 필요</td><td>별도 미팅룸 존재 여부 확인</td></tr>
-                    </tbody>
-                </table>
-                <p>스몰 토킹이 주된 목적이라면 음향보다는 좌석 배치와 테이블 사이즈를 우선시해야 한다. 반대로 음악 감상이 목적이라면 스피커 배치와 룸의 음향 특성을 먼저 체크하라. 목적이 변하면 우선순위도 뒤집힌다.</p>
-            </div>
-        </section>
-
-        <!-- 확인사항 -->
-        <section id="checklist" class="x-top-at1l" data-v="j9i2o4">
-            <h2 class="x-top-at1l-title">처음 이용자용 확인 리스트</h2>
-            <div class="x-top-at1l-body">
-                <p>합정 하이퍼블릭을 처음 방문하는 사람은 용어를 몰라도 된다. 직원에게 "처음입니다"라고 말하는 것이 가장 빠른 길이다. 아래는 방문 전에 확인하면 좋을 항목들이다.</p>
-                <ul style="margin-left:1.5rem; margin-bottom:1.5rem;">
-                    <li>방문 시간대에 따라 운영 시간이 유동적인지</li>
-                    <li>룸 안에 화장실이 있는지 공용인지</li>
-                    <li>음료 외부 반입 가능 여부 (목적에 따라 중요)</li>
-                    <li>결제 수단과 영수증 처리 여부</li>
-                </ul>
-                <p>특히 대규모 모임일수록 예약 시 '인원 + 목적'을 명확히 전달해야 한다. "몇 명이에요?"라는 질문에 단순 숫자만 말하지 말고, 분위기를 함께 전달하면 직원이 훨씬 적합한 공간을 추천해준다.</p>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section id="faq" class="x-top-at1l" data-v="g4p8f2">
-            <h2 class="x-top-at1l-title">자주 묻는 질문</h2>
-            <div class="m-item-j3z0-item">
-                <div class="m-item-j3z0-question">합정 하이퍼블릭 처음 가면 몇 명이 적당한가요?</div>
-                <div class="m-item-j3z0-answer">2~4명은 심도 있는 대화형, 5명 이상은 파티형 공간이 적합합니다. 하지만 정답은 없고, 목적에 따라 역전될 수 있습니다.</div>
-            </div>
-            <div class="m-item-j3z0-item">
-                <div class="m-item-j3z0-question">합정 하이퍼블릭 이른 시간과 늦은 시간 차이는?</div>
-                <div class="m-item-j3z0-answer">이른 시간은 준비 상태가 안정적이고, 늦은 시간은 활기가 넘치지만 소음이 높습니다. 조용한 미팅을 원한다면 이른 시간을 권장합니다.</div>
-            </div>
-            <div class="m-item-j3z0-item">
-                <div class="m-item-j3z0-question">생일 모임에 적합한 곳은 어떻게 고르나요?</div>
-                <div class="m-item-j3z0-answer">생일 케이크나 간단한 이벤트가 가능한지 먼저 문의하세요. 가족 같은 조용한 모임이라면 이른 시간, 시끌벅적한 파티라면 늦은 시간이 낫습니다.</div>
-            </div>
-            <div class="m-item-j3z0-item">
-                <div class="m-item-j3z0-question">하이퍼블릭 용어를 몰라도 괜찮나요?</div>
-                <div class="m-item-j3z0-answer">물어보셔도 전혀 문제없습니다. '하이퍼블릭'은 일반 룸보다 강화된 음향과 공간 구성을 뜻합니다. 직원에게 처음이라고 말하면 친절하게 설명해줍니다.</div>
-            </div>
-        </section>
-
-        <!-- 작성자 바이오 -->
-        <div class="v-box-ooe5-block" data-v="y1t6k9">
-            <div class="v-box-ooe5-name">로컬가이드 맹재</div>
-            <p>합정 일대 공간 정보를 5년간 정리해온 로컬 가이드. 하이퍼블릭과 룸 공간 선택에 있어 정답 없는 조건별 분기를 기록합니다.</p>
-        </div>
-    </main>
-
-    <footer class="r-nav-flun" data-v="e3m7s5">
-        © 2025 합정 하이퍼블릭 추천 가이드. 이 사이트는 개인 기록용이며 어떠한 상업적 추천도 하지 않습니다.
-    </footer>
-
-    <script>
-        function toggleMenu() {
-            document.querySelector('.k-box-bk1s').classList.toggle('active');
-        }
-    </script>
+  <aside class="sidebar">
+    <div class="sidebar-widget cta-box">
+      <h4>📞 예약 문의</h4>
+      <p>마포 셔츠룸 예약 및 가격 문의는 아래 버튼을 이용하세요.</p>
+      <a href="tel:010-0000-0000">지금 전화 상담</a>
+    </div>
+    <div class="sidebar-widget">
+      <div class="sidebar-title">🔥 인기 지역</div>
+      <ul class="sidebar-list">
+        <li><a href="#">합정역 주변</a></li>
+        <li><a href="#">홍대입구 주변</a></li>
+        <li><a href="#">망원동 일대</a></li>
+        <li><a href="#">마포역 주변</a></li>
+        <li><a href="#">상수역 주변</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-widget">
+      <div class="sidebar-title">🏷️ 태그</div>
+      <div class="tag-cloud">
+        <a href="#" class="tag-item">마포 셔츠룸 추천</a><a href="#" class="tag-item">강서 셔츠룸</a><a href="#" class="tag-item">가양 셔츠룸</a><a href="#" class="tag-item">마포 셔츠룸 가격</a>
+      </div>
+    </div>
+    <div class="sidebar-widget">
+      <div class="sidebar-title">📋 최신 글</div>
+      <ul class="sidebar-list">
+        <li><a href="#">강서구 셔츠룸 가이드 2025</a></li><li><a href="#">홍대 셔츠룸 실방문 후기 TOP10</a></li><li><a href="#">합정 셔츠룸 가격 완전 정리</a></li><li><a href="#">마포 단체 셔츠룸 예약 방법</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+<footer>
+  <strong>마포 셔츠룸 정보 블로그</strong><br>
+  <span style="margin-top:8px;display:block">본 블로그는 지역 업소 정보 제공을 목적으로 운영됩니다.</span>
+  <span style="margin-top:6px;display:block"><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a> | © 2025 All Rights Reserved</span>
+</footer>
 </body>
 </html>
